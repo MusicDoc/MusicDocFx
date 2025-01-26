@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.m-m-m</groupId>
+    <artifactId>mmm</artifactId>
+    <version>21</version>
+  </parent>
+  <groupId>io.github.musicdoc</groupId>
+  <artifactId>musicdoc-fx</artifactId>
+  <version>${revision}</version>
+  <name>${project.artifactId}</name>
+  <description>JavaFX desktop application for MusicDoc.</description>
+
+  <properties>
+    <github.organization>MusicDoc</github.organization>
+    <github.repository>MusicDocFx</github.repository>
+    <revision>0-SNAPSHOT</revision>
+    <javafx.version>23-ea+22</javafx.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>musicdoc-view</artifactId>
+      <version>0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <!--
+      <dependency>
+        <groupId>io.github.musicdoc</groupId>
+      <artifactId>musicdoc-parent</artifactId>
+        <version>0-SNAPSHOT</version>
+      <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      -->
+    </dependencies>
+  </dependencyManagement>
+</project>
